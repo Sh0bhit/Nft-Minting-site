@@ -1,4 +1,10 @@
 .mint{
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
+}
+
+
+.container h2{
+  font-size: 20px;
+  text-align:center;
 }
