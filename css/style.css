@@ -1,10 +1,32 @@
 .mint{
   text-align: center;
   margin-top: 5%;
+  opacity: 0;
+  transition: 1s;
+  transform: scaleX(-50%);
+  pointer-events: none;
 }
 
 
 .container h2{
   font-size: 20px;
   text-align:center;
+}
+
+.mintbtn{
+  background-color: black;
+  color: azure;
+  padding: 0.5rem;
+  border-radius: 20%;
+}
+
+.mintbtn:hover{
+  background-color: #3f51b5;
+}
+
+.mint.show{
+  opacity: 1;
+  transform: scaleX(100%);
+  transition: 1s;
+  pointer-events: all;
 }
