@@ -51,6 +51,7 @@
 
 .div-1 , .div-2 , .div-3 , .div-4{
   opacity: 0;
+  transition: 1s;
 }
 
 
