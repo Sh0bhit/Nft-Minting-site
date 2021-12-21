@@ -3,14 +3,25 @@
   margin-top: 5%;
   opacity: 0;
   transition: 1s;
-  transform: scaleX(-50%);
-  pointer-events: none;
+  transform: scaleX(-50%) translateY(1000%);
+  pointer-events: none;  
+}
+
+.container.mx-auto{
+  margin :0%;
+  max-width: 100%;
+}
+
+.containerhead{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-.container h2{
+.containerhead h2{
   font-size: 20px;
   text-align:center;
+  margin: 0;
 }
 
 .mintbtn{
@@ -20,6 +31,8 @@
   border-radius: 20%;
 }
 
+
+
 .mintbtn:hover{
   background-color: #3f51b5;
 }
@@ -27,6 +40,39 @@
 .mint.show{
   opacity: 1;
   transform: scaleX(100%);
-  transition: 1s;
   pointer-events: all;
+  padding-top: 0%;
 }
+
+.btn{
+   cursor: pointer;
+}
+
+
+.div-1 , .div-2 , .div-3 , .div-4{
+  opacity: 0;
+}
+
+
+
+
+.div-1.on , .div-2.on , .div-3.on , .div-4.on{
+  opacity: 1;
+}
+
+
+.d{
+  font-size: xx-large;
+  text-align: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+
+.cont{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 3rem;
+}
+
+
