@@ -1,34 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.navlogo{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.navtext{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.navlinks li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+
+
+.containerhead{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
 .mint{
   text-align: center;
   margin-top: 5%;
   opacity: 0;
   transition: 1s;
-  transform: scaleX(-50%) translateY(1000%);
+  transform: scaleX(-50%) translateY(100%);
   pointer-events: none;  
 }
 
-.container.mx-auto{
-  margin :0%;
-  max-width: 100%;
-}
 
-.containerhead{
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.containerhead h2{
-  font-size: 20px;
-  text-align:center;
-  margin: 0;
-}
 
 .mintbtn{
   background-color: black;
   color: azure;
   padding: 0.5rem;
-  border-radius: 20%;
+  border: none;
+  border-radius: 10px;
+  margin-left: 1%;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.cont{
+  text-align: center;
+}
+
+.conttext{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+@media screen and (max-width:450px){
+  .head{
+    display: block;
+    text-align: center;
+
+  }
+
+  
+.navlinks li{
+  padding: 0 10px;
+}
+
+
 }
 
 
@@ -42,6 +98,7 @@
   transform: scaleX(100%);
   pointer-events: all;
   padding-top: 0%;
+  overflow-y: auto;
 }
 
 .btn{
@@ -51,6 +108,7 @@
 
 .div-1 , .div-2 , .div-3 , .div-4{
   opacity: 0;
+  transition: 0.1s;
 }
 
 
@@ -58,21 +116,22 @@
 
 .div-1.on , .div-2.on , .div-3.on , .div-4.on{
   opacity: 1;
+  transition: 1s;
 }
 
 
-.d{
-  font-size: xx-large;
-  text-align: center;
+.conttext{
+  margin-top: 5%;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
 
+
+
 .cont{
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: 3rem;
 }
 
 

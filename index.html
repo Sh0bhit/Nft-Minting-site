@@ -10,36 +10,65 @@
         <link rel="manifest" href="/manifest.json"/>
         <title>Nft Minting Site</title>
         <link href="/static/css/main.fbf1fafa.chunk.css" rel="stylesheet">
-      <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> 
       <noscript>You need to enable JavaScript to run this app.</noscript>
     </head>
     <body>
-        <header class="text-gray-600 body-font">
-          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-              <img src="images/logo1.png">
-              <span class="ml-3 text-xl">Nft mania</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <a class="btn mr-5 hover:text-gray-900" data-value="1" >About Us</a>
-              <a class="btn mr-5 hover:text-gray-900" data-value="2">Roadmap</a>
-              <a class="btn mr-5 hover:text-gray-900" data-value="3">Whitepaper</a>
-              <a class="btn mr-5 hover:text-gray-900" data-value="4">Info</a>
-              <button class="mintbtn">Mint</button>
-            </nav>
+        <header class="head">
+          <div class="navlogo">
+            <div class="navimage">
+            <img src="images/logo1.png">
           </div>
-          <div class="containerhead">
-            <h2>Switch Network To devnet From Mainnet</h2>
-        </div>
+            <div class="navtext"><span>Nft Mania</span></div>
+          </div>
+
+          
+          <div class="align"> 
+            <nav class="navbar">
+              <ul class="navlinks">
+                <li><a class="btn" data-value="1" >About Us</a></li>
+                <li><a class="btn" data-value="2">Roadmap</a></li>
+                <li><a class="btn" data-value="3">Whitepaper</a></li>
+                <li><a class="btn" data-value="4">Info</a></li>
+                <li><button class="mintbtn">Mint</button></li>
+                
+              </ul>
+            </nav>
+            
+          </div>
         </header>
+
+        <div class="containerhead">
+          <h2>Switch Network To devnet From Mainnet</h2>
+      </div>
     
     <div id="root" class="mint"></div>
     
        <div class="cont">
-      <div class="d div-1"><h2>About us</h2></div>
-      <div class="d div-2"><h2>Roadmap</h2></div>
-      <div class="d div-3"><h2>Whitepaper</h2></div>
-      <div class="d div-4"><h2>Info</h2></div>
+        <div class="conttext">
+            <div class="d div-1">
+            <h1 class="conttitle">About us</h1>
+            <p class="contpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem harum veniam magni dolore accusamus excepturi? Adipisci a numquam, sed iusto sit quas sint cupiditate rem atque non deserunt eligendi quo!</p>
+          </div>
+        </div>
+          <div class="conttext">
+              <div class="d div-2">
+              <h1 class="conttitle">Roadmap</h1>
+              <p class="contpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus tempora, consequuntur delectus sit porro quia sequi praesentium rem illo voluptatum dolor! Ipsam, quasi nostrum? Expedita excepturi atque tenetur vero error?</p>
+            </div>
+          </div>
+            <div class="conttext">
+                <div class="d div-3">
+                <h1 class="conttitle">Whitepaper</h1>
+                <p class="contpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi hic labore sequi similique dolores voluptatem itaque. Corporis at explicabo itaque hic. Eius ducimus similique, eveniet esse neque blanditiis enim quibusdam!</p>
+              </div>
+            </div>
+              <div class="conttext">
+                  <div class="d div-4">
+                  <h1 class="conttitle">info</h1>
+                  <p class="contpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta obcaecati maiores placeat culpa? Recusandae in repellendus itaque debitis labore odio harum, eligendi corrupti perspiciatis similique, asperiores nulla ex! Vero, quae!</p>
+                </div>
+              </div>
+    
 
     </div>
         
