@@ -33,6 +33,7 @@ header{
   width: 100%;
   z-index: 10;
   background-color: white;
+  box-shadow: 0 0 3px black;
 }
 
 
@@ -57,16 +58,6 @@ header{
   animation: 1s ease-out 0s 1 headanim;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-}
-
-
-.mint{
-  text-align: center;
-  margin-top: 5%;
-  opacity: 0;
-  transition: 1s;
-  transform: scaleX(-50%) translateY(100%);
-  pointer-events: none;  
 }
 
 
@@ -115,6 +106,19 @@ header{
 .mintbtn:hover{
   background-color: #3f51b5;
 }
+
+
+.mint{
+  text-align: center;
+  margin-top: 5%;
+  opacity: 0;
+  transition: 1s;
+  transform: scaleX(-50%) translateY(100%);
+  pointer-events: none;  
+}
+
+
+
 
 .mint.show{
   opacity: 1;
